@@ -21,4 +21,8 @@ export class DashboardComponent {
     this.auth.logout();
     this.router.navigate(['/login']);
   }
+
+  irProductos() {
+    this.router.navigate(['/productos']);
+  }
 }

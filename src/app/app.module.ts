@@ -8,13 +8,16 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ClientesComponent } from './clientes/clientes.component';
+import { ProductosComponent } from './productos/productos.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    ClientesComponent
+    ClientesComponent,
+    ProductosComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +25,9 @@ import { ClientesComponent } from './clientes/clientes.component';
     FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

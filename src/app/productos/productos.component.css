@@ -1,0 +1,28 @@
+.error {
+    color: #b00020;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+input.ng-invalid.ng-touched {
+    border-color: #b00020;
+}
+
+/* Small visual tweaks on top of Bootstrap */
+.card {
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.table-responsive {
+    margin-top: 0.5rem;
+}
+
+/* Keep error styles compact */
+.text-danger small,
+.text-danger span {
+    display: block;
+}
